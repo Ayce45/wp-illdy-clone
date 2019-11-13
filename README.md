@@ -1,5 +1,4 @@
 # wp-illdy-clone
-# Sujet Illdy
 ## Général
 - Le thème illdy-child doit être un thème enfant de Blankslate (https://fr.wordpress.org/themes/blankslate/)
 - Plugins utiles : What The File (pour voir quel(s) template(s) sont utilisés), Theme Check, Advanced Custom Fields (pour ajouter des champs à un type de contenu sans avoir à coder des metafields)
