@@ -1,3 +1,14 @@
+<?php 
+
+$args = array(
+    'post_type'     => 'testimonial',
+    'posts_per_page' => 4
+);
+
+$query = new WP_Query($args);
+
+if ($query->have_posts() && $query->found_posts >= 4) : ?>
+
 <section id="testimonials"    style='background: url(<?= get_theme_file_uri() ?>/img/testiomnials-background.webp);'>
         <h3>Testimonials</h3>
         <div class="container-slide">
@@ -8,45 +19,17 @@
                 <div id="item-3" class="control-operator"></div>
                 <div id="item-4" class="control-operator"></div>
 
+                <?php while ($query->have_posts()) : $query->the_post(); ?>
                 <figure class="item">
                     <div class="profil">
-                        <img src="<?= get_theme_file_uri() ?>/img/profil-1.webp">
-                        <p>"Awesome theme with great design and awesome support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme
-                            with a lot of of features to choose from."</p>
+                    <?php the_post_thumbnail(); ?>
+                        <?= apply_filters( 'the_content', $post->post_content ); ?>
                         <div class="arrow-down"></div>
-                        <p class="testimonial-name">Mike Muller</p>
+                        <p class="testimonial-name"><?= the_title(); ?></p>
                     </div>
                 </figure>
 
-                <figure class="item">
-                    <div class="profil">
-                        <img src="<?= get_theme_file_uri() ?>/img/profil-2.webp">
-                        <p>"Awesome theme with great design and awesome support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme
-                            with a lot of of features to choose from."</p>
-                        <div class="arrow-down"></div>
-                        <p class="testimonial-name">John Doe</p>
-                    </div>
-                </figure>
-
-                <figure class="item">
-                    <div class="profil">
-                        <img src="<?= get_theme_file_uri() ?>/img/profil-3.webp">
-                        <p>"Awesome theme with great design and awesome support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme
-                            with a lot of of features to choose from. You can customize whatever section you want and you can rest assure that no matter what device your website is viewed on – it looks great."</p>
-                        <div class="arrow-down"></div>
-                        <p class="testimonial-name">Aigars Silkalns</p>
-                    </div>
-                </figure>
-
-                <figure class="item">
-                    <div class="profil">
-                        <img src="<?= get_theme_file_uri() ?>/img/profil-4.webp">
-                        <p>"Awesome theme with great design and helpful support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme
-                            with a lot of of features to choose from. You can customize whatever section you want and you can rest assure that no matter what device your website is viewed on – it looks great."</p>
-                        <div class="arrow-down"></div>
-                        <p class="testimonial-name">Jane Smith</p>
-                    </div>
-                </figure>
+                <?php endwhile; ?>
 
                 <div class="controls">
                     <a href="#item-1" class="control-button">•</a>
@@ -58,3 +41,5 @@
         </div>
         </div>
     </section>
+
+    <?php endif; ?>

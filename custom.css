@@ -144,6 +144,7 @@ h1 {
 }
 
 #about {
+    padding-bottom: 90px;
     margin-left: 90px;
     margin-right: 90px;
 }
@@ -875,12 +876,13 @@ h5 {
     font-family: poppins;
 }
 
-.post-entry {
+.post-entry p {
     margin: 40px 0 55px;
     padding: 0 30px;
     line-height: 26px;
     color: #8c9597;
     font-size: 16px;
+    font-weight: 100;
 }
 
 .post-button {

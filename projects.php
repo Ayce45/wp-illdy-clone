@@ -6,7 +6,7 @@ $args = array(
 
 $query = new WP_Query($args);
 ?>
-<?php if ($query->have_posts()) : ?>
+<?php if ($query->have_posts() && $query->found_posts >= 4) : ?>
     <section id="projects">
         <h3>Projects</h3>
         <div class="section-p mt-25">

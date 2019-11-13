@@ -12,11 +12,11 @@
 - Affiche les 4 derniers items d'un custom post type "projects" (-> un menu "Projects" doit être créé dans le backoffice) ✔
 - Chaque projet contient juste un nom, une image et un lien externe. ✔
 ## Section "Testimonials"
-- Affiche les 4 derniers items d'un custom post type "testimonials" (-> un menu "Testimonials" doit être créé dans le backoffice)
+- Affiche les 4 derniers items d'un custom post type "testimonials" (-> un menu "Testimonials" doit être créé dans le backoffice) ✔
 ## Section "Services"
 - Garder en statique ✔
 ## Latest News
-- Texte + bouton en statique, montrer les 3 derniers articles
+- Texte + bouton en statique, montrer les 3 derniers articles ✔
 ## Stats + Team
 - Laisser en statique pour l'instant ✔
 ## Contact Us

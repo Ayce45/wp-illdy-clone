@@ -192,6 +192,14 @@ function get_contactus()
     locate_template($templates, true);
 }
 
+function get_singleheader()
+{
+    $templates = array();
+    $templates[] = 'singleheader.php';
+
+    locate_template($templates, true);
+}
+
 /**
  * Font Awesome Kit Setup
  * 
@@ -217,7 +225,7 @@ fa_custom_setup_kit('https://kit.fontawesome.com/26e6f3a379.js');
 include(get_stylesheet_directory() . '/includes/customizer.php');
 
 
-function wpmu_create_post_type() {
+function wpmu_create_post_type_projects() {
 	$labels = array( 
 		'name' => __( 'Projects', 'wpmu' ),
 		'singular_name' => __( 'Project', 'wpmu' ),
@@ -244,7 +252,67 @@ function wpmu_create_post_type() {
 	);
 	register_post_type( 'project', $args );
 } 
-add_action( 'init', 'wpmu_create_post_type' );
+add_action( 'init', 'wpmu_create_post_type_projects' );
+
+function wpmu_create_post_type_testimonials() {
+	$labels = array( 
+		'name' => __( 'Testimonials', 'wpmu' ),
+		'singular_name' => __( 'Testimonial', 'wpmu' ),
+		'add_new' => __( 'New Testimonial', 'wpmu' ),
+		'add_new_item' => __( 'Add New Testimonial', 'wpmu' ),
+		'edit_item' => __( 'Edit Testimonial', 'wpmu' ),
+		'new_item' => __( 'New Testimonial', 'wpmu' ),
+		'view_item' => __( 'View Testimonial', 'wpmu' ),
+		'search_items' => __( 'Search Testimonials', 'wpmu' ),
+		'not_found' =>  __( 'No Testimonials Found', 'wpmu' ),
+		'not_found_in_trash' => __( 'No Testimonials found in Trash', 'wpmu' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'has_archive' => false,
+        'public' => true,
+        'menu_icon' => 'dashicons-businessman',
+		'hierarchical' => false,
+		'rewrite' => array( 'slug' => 'testimonials' ),
+		'supports' => array(
+			'title', 
+            'thumbnail', 
+            'editor'
+		)
+	);
+	register_post_type( 'testimonial', $args );
+} 
+add_action( 'init', 'wpmu_create_post_type_testimonials' );
+
+function wpmu_create_post_type_news() {
+	$labels = array( 
+		'name' => __( 'News', 'wpmu' ),
+		'singular_name' => __( 'News', 'wpmu' ),
+		'add_new' => __( 'New News', 'wpmu' ),
+		'add_new_item' => __( 'Add New News', 'wpmu' ),
+		'edit_item' => __( 'Edit News', 'wpmu' ),
+		'new_item' => __( 'New News', 'wpmu' ),
+		'view_item' => __( 'View News', 'wpmu' ),
+		'search_items' => __( 'Search News', 'wpmu' ),
+		'not_found' =>  __( 'No News Found', 'wpmu' ),
+		'not_found_in_trash' => __( 'No News found in Trash', 'wpmu' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'has_archive' => false,
+        'public' => true,
+        'menu_icon' => 'dashicons-welcome-write-blog',
+		'hierarchical' => false,
+		'rewrite' => array( 'slug' => 'news' ),
+		'supports' => array(
+			'title', 
+            'thumbnail', 
+            'editor'
+		)
+	);
+	register_post_type( 'news', $args );
+} 
+add_action( 'init', 'wpmu_create_post_type_news' );
 
 function remove_from_admin_bar($wp_admin_bar) {
     if ( ! is_admin() ) {
