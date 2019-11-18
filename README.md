@@ -20,7 +20,7 @@
 ## Stats + Team
 - Laisser en statique pour l'instant ✔
 ## Contact Us
-- Utiliser le plugin "Contact forms 7"
+- Utiliser le plugin "Contact forms 7" ✔
 - Au moment de l'envoi du mail, stocker en BDD une copie du nom/mail/sujet/message
 ## Footer
 - Faire un menu "footer" dans le backoffice

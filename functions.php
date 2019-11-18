@@ -329,3 +329,18 @@ function add_my_post_types_to_query( $query ) {
         $query->set( 'post_type', array( 'project' ) );
     return $query;
 }
+
+function contactform7_before_send_mail( $form ) {
+    global $wpdb;
+    $form = WPCF7_Submission::get_instance();
+    if ($form) 
+        $formData = $form->get_posted_data();
+    $title = $formData['your-name'];
+    $email  = $formData['your-email'];
+    $subject = $formData['your-subject'];
+    $message = $formData['your-message'];
+
+    $wpdb->insert( 'wp_mails', array( 'mail_name' =>$title, 'mail_email' => $email, 'mail_subject' => $subject, 'mail_message' =>$message ), array( '%s','%s','%s','%s' ) );
+}
+remove_all_filters ('wpcf7_before_send_mail');
+add_action( 'wpcf7_before_send_mail', 'contactform7_before_send_mail' );

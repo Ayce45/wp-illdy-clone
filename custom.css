@@ -1059,9 +1059,10 @@ textarea {
     padding: 0 20px;
     border: 1px solid #e1e1e1;
     resize: none;
+    width: 100%;
 }
 
-.input-submit {
+.wpcf7-submit {
     width: auto;
     height: 44px;
     background-color: #fff;
@@ -1163,6 +1164,10 @@ footer h5 {
 
 .post-thumbnail {
     width: 25%;
+}
+
+.contact-bottom {
+    margin-top: 30px;
 }
 
 @media (max-width: 1120px) {
