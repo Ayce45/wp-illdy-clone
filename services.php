@@ -28,10 +28,10 @@
                 </div>
             </div>
             <div class="service">
-                <div class="service-icon thirdary">
+                <div class="service-icon tertiary">
                     <i class="fa fa-search"></i>
                 </div>
-                <div class="service-title thirdary">
+                <div class="service-title tertiary">
                     <p class="services-name">SEO Analisys</p>
                 </div>
                 <div class="service-p">

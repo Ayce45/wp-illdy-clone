@@ -110,7 +110,7 @@ $textcolors[] = array(
 $textcolors[] = array(
 	'slug' => 'wpmu_color3',
 	'default' => '#6a4d8a',
-	'label' => __( 'Thirdary color', 'wpmu' )
+	'label' => __( 'Tertiary color', 'wpmu' )
 );
 
 foreach ( $textcolors as $textcolor ) {

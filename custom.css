@@ -6,8 +6,8 @@
     color: var(--secondary)!important;
 }
 
-.thirdary {
-    color: var(--thirdary)!important;
+.tertiary {
+    color: var(--tertiary)!important;
 }
 
 .border-main {
@@ -18,8 +18,8 @@
     border-color: var(--secondary)!important;
 }
 
-.border-thirdary {
-    border-color: var(--thirdary)!important;
+.border-tertiary {
+    border-color: var(--tertiary)!important;
 }
 
 header {
@@ -287,15 +287,15 @@ section h3 {
 }
 
 .background-skill-3 {
-    background-color: var(--thirdary)!important;
+    background-color: var(--tertiary)!important;
 }
 
 .color-skill-3 {
-    color: var(--thirdary)!important;
+    color: var(--tertiary)!important;
 }
 
 .border-color-skill-3 {
-    border-top-color: var(--thirdary)!important;
+    border-top-color: var(--tertiary)!important;
 }
 
 .mt-25 p {
@@ -369,7 +369,7 @@ section h3 {
     font-size: 17px;
     font-family: lato;
     font-weight: 400;
-    background-color: var(--thirdary);
+    background-color: var(--tertiary);
     padding: 50px 35px 35px 50px;
     line-height: 30px;
 }
@@ -378,7 +378,7 @@ section h3 {
     width: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid var(--thirdary)!important;
+    border-top: 20px solid var(--tertiary)!important;
     position: relative;
     margin: auto;
     top: -17px;

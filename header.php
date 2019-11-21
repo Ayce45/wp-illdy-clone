@@ -17,7 +17,7 @@
         :root {
             --main: <?= $color_scheme1; ?>;
             --secondary: <?= $color_scheme2; ?>;
-            --thirdary: <?= $color_scheme3; ?>;
+            --tertiary: <?= $color_scheme3; ?>;
         }
     </style>
 

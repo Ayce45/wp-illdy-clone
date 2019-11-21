@@ -2,29 +2,24 @@
         <div class="container menu">
             <div>
                 <h5>PRODUCTS</h5>
-                <ul>
-                    <li><a href="#" title="Our work">> Our work</a></li>
-                    <li><a href="#" title="Club">> Club</a></li>
-                    <li><a href="#" title="News">> News</a></li>
-                    <li><a href="#" title="Announcement">> Announcement</a></li>
-                </ul>
+                <?php wp_nav_menu(array('theme_location' => 'main-footer')); ?>
             </div>
             <div>
                 <h5>INFORMATION</h5>
                 <ul>
-                    <li><a href="#" title="Pricing">> Pricing</a></li>
-                    <li><a href="#" title="Terms">> Terms</a></li>
-                    <li><a href="#" title="Affiliates">> Affiliates</a></li>
-                    <li><a href="#" title="Blog">> Blog</a></li>
+                    <li><a href="#" title="Pricing">Pricing</a></li>
+                    <li><a href="#" title="Terms">Terms</a></li>
+                    <li><a href="#" title="Affiliates">Affiliates</a></li>
+                    <li><a href="#" title="Blog">Blog</a></li>
                 </ul>
             </div>
             <div>
                 <h5>SUPPORT</h5>
                 <ul>
-                    <li><a href="#" title="Documentation">> Documentation</a></li>
-                    <li><a href="#" title="FAQs">> FAQs</a></li>
-                    <li><a href="#" title="Forums">> Forums</a></li>
-                    <li><a href="#" title="Contact">> Contact</a></li>
+                    <li><a href="#" title="Documentation">Documentation</a></li>
+                    <li><a href="#" title="FAQs">FAQs</a></li>
+                    <li><a href="#" title="Forums">Forums</a></li>
+                    <li><a href="#" title="Contact">Contact</a></li>
                 </ul>
             </div>
         </div>

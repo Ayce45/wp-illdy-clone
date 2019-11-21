@@ -21,7 +21,7 @@
 - Laisser en statique pour l'instant ✔
 ## Contact Us
 - Utiliser le plugin "Contact forms 7" ✔
-- Au moment de l'envoi du mail, stocker en BDD une copie du nom/mail/sujet/message
+- Au moment de l'envoi du mail, stocker en BDD une copie du nom/mail/sujet/message ✔
 ## Footer
 - Faire un menu "footer" dans le backoffice
 - Ne gérer en dynamique que la 1ère colonne (2e et 3e en statique, et on verra plus tard pour passer ça en sidebar)
