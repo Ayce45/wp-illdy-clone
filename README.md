@@ -1,6 +1,6 @@
 # wp-illdy-clone
 ## Général
-- Le thème illdy-child doit être un thème enfant de Blankslate (https://fr.wordpress.org/themes/blankslate/)
+- Le thème illdy-child doit être un thème enfant de Blankslate (https://fr.wordpress.org/themes/blankslate/) ✔
 - Plugins utiles : What The File (pour voir quel(s) template(s) sont utilisés), Theme Check, Advanced Custom Fields (pour ajouter des champs à un type de contenu sans avoir à coder des metafields)
 ## Header
 - Le menu doit être dynamique (7 éléments) ✔
@@ -23,5 +23,5 @@
 - Utiliser le plugin "Contact forms 7" ✔
 - Au moment de l'envoi du mail, stocker en BDD une copie du nom/mail/sujet/message ✔
 ## Footer
-- Faire un menu "footer" dans le backoffice
-- Ne gérer en dynamique que la 1ère colonne (2e et 3e en statique, et on verra plus tard pour passer ça en sidebar)
+- Faire un menu "footer" dans le backoffice ✔
+- Ne gérer en dynamique que la 1ère colonne (2e et 3e en statique, et on verra plus tard pour passer ça en sidebar) ✔
